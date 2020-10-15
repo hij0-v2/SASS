@@ -1,0 +1,46 @@
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.header {
+    width: 100%;
+    @include flexCenter();
+}
+
+.container {
+    @include flexCenter();
+}
+
+.img {
+    @include flexRow();    
+    height: 30%;
+    width: 65%; 
+
+}  
+img {
+    margin:5px;
+    &:hover {
+        animation: rotation 0.5s infinite linear;
+    
+    }
+}      
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+      filter:brightness(100%);
+    }
+    to {
+      transform: rotate(359deg);
+      filter: brightness(30%);
+    }
+  }

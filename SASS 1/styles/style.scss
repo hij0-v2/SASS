@@ -1,0 +1,59 @@
+$primarybtn:aqua;
+$bordercolor: black;
+$linkcolor:black;
+$textcolor:yellow;
+$font: 'Sansita Swashed', cursive;
+$bgf:teal;
+
+@mixin flexcolumn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@mixin flexrow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+@mixin flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background-color: $bgf;
+    height: 100px;
+    width: 100%; 
+    @include flexcenter();
+}
+.main {
+    @include flexrow();
+    width: 100%;
+    height: 170px;
+}
+.list {
+    width: 10%;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 15px;
+    background-color: $primarybtn;
+}
+.column {
+    @include flexcolumn();
+    margin-top: 5px;
+    padding: 15px;
+    width: 100%;
+    background-color: $primarybtn;
+}
+
+.button {
+    width: 20px;
+}
+
+h2 {
+    font-family: $font;
+    color: $textcolor;
+  
+}

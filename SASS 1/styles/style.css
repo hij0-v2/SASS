@@ -1,0 +1,62 @@
+.header {
+  background-color: teal;
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  height: 170px;
+}
+
+.list {
+  width: 10%;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 15px;
+  background-color: aqua;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5px;
+  padding: 15px;
+  width: 100%;
+  background-color: aqua;
+}
+
+.button {
+  width: 20px;
+}
+
+h2 {
+  font-family: "Sansita Swashed", cursive;
+  color: yellow;
+}
+/*# sourceMappingURL=style.css.map */
